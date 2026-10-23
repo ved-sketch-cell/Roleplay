@@ -1,0 +1,17 @@
+{
+  "exported_at": "2026-10-12",
+  "frontend_commit": "a3d1532cbfbb85c8a37bc56e87bae81499131acd",
+  "source_files": 283,
+  "backend_tests_passed": 50,
+  "frontend_journey_groups_passed": 44,
+  "frontend_route_renders": 102,
+  "connected_backend_web_routes": [
+    "people",
+    "messages",
+    "notifications",
+    "recover",
+    "moderation"
+  ],
+  "mobile_preview": "device-only",
+  "ai_bot_replies": "written samples; live endpoint adapter only"
+}

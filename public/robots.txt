@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roleplay-knowledge-community.mikyhealth.chatgpt.site/sitemap.xml

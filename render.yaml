@@ -1,0 +1,125 @@
+databases:
+  - name: roleplay-db
+    databaseName: roleplay
+    user: roleplay
+    plan: starter
+
+services:
+  - type: redis
+    name: roleplay-redis
+    plan: starter
+    ipAllowList: []
+    maxmemoryPolicy: noeviction
+
+  - type: web
+    name: roleplay-api
+    runtime: docker
+    dockerfilePath: backend/Dockerfile
+    dockerContext: backend
+    plan: starter
+    healthCheckPath: /health/live
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: RATE_LIMITS_ENABLED
+        value: "true"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: roleplay-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: roleplay-redis
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: OUTBOX_ENCRYPTION_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      - key: PUBLIC_WEB_URL
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        value: "587"
+      - key: SMTP_STARTTLS
+        value: "true"
+      - key: SMTP_FROM
+        value: noreply@example.com
+      - key: SMTP_USERNAME
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+
+  - type: worker
+    name: roleplay-worker
+    runtime: docker
+    dockerfilePath: backend/Dockerfile
+    dockerContext: backend
+    dockerCommand: python -m app.worker
+    plan: starter
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: roleplay-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: roleplay-redis
+          property: connectionString
+      - key: JWT_SECRET
+        fromService:
+          type: web
+          name: roleplay-api
+          envVarKey: JWT_SECRET
+      - key: OUTBOX_ENCRYPTION_KEY
+        fromService:
+          type: web
+          name: roleplay-api
+          envVarKey: OUTBOX_ENCRYPTION_KEY
+      - key: PUBLIC_WEB_URL
+        fromService:
+          type: web
+          name: roleplay-api
+          envVarKey: PUBLIC_WEB_URL
+      - key: SMTP_HOST
+        fromService:
+          type: web
+          name: roleplay-api
+          envVarKey: SMTP_HOST
+      - key: SMTP_PORT
+        fromService:
+          type: web
+          name: roleplay-api
+          envVarKey: SMTP_PORT
+      - key: SMTP_STARTTLS
+        fromService:
+          type: web
+          name: roleplay-api
+          envVarKey: SMTP_STARTTLS
+      - key: SMTP_FROM
+        fromService:
+          type: web
+          name: roleplay-api
+          envVarKey: SMTP_FROM
+      - key: SMTP_USERNAME
+        fromService:
+          type: web
+          name: roleplay-api
+          envVarKey: SMTP_USERNAME
+      - key: SMTP_PASSWORD
+        fromService:
+          type: web
+          name: roleplay-api
+          envVarKey: SMTP_PASSWORD

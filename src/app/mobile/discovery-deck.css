@@ -1,0 +1,76 @@
+/* Interests scroll independently; the action bar occupies its own row above app navigation. */
+.mobile-journey[data-route="interests"] .journey-stage { overflow: hidden; }
+.journey-stage .mobile-interest-picker.mobile-flow-page { display: flex; flex-direction: column; height: 100%; min-height: 0; padding: 0; overflow: hidden; }
+.interest-picker-body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior-y: contain; padding: 22px clamp(14px, 4vw, 28px) 20px; scrollbar-width: thin; }
+.interest-picker-intro { position: relative; padding-right: 75px; margin-bottom: 25px; }
+.interest-picker-intro h1 { font-size: clamp(25px, 5vw, 34px); font-weight: 750; letter-spacing: -.04em; line-height: 1.15; margin: 9px 0 12px; }
+.interest-picker-intro p { color: #bcb6ce; font-size: 14px; line-height: 1.6; }
+.interest-category-art { position: absolute; top: 8px; right: 0; width: 64px; height: 72px; border: 1px solid #ffffff20; border-radius: 20px; display: grid; place-items: center; font-size: 30px; transform: rotate(7deg); box-shadow: 0 8px 25px #00000025; }
+.interest-category-art svg { position: absolute; top: -8px; right: -4px; color: #d6fc8a; }
+.interest-category-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.interest-category-heading h2 { font-size: 18px; font-weight: 700; }
+.interest-category-heading small, .interest-picker-note { font-size: 12px; color: #aaa4bd; }
+.interest-category-heading button, .interest-selected-summary button { min-height: 44px; }
+.interest-selected-summary { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; justify-content: space-between; margin-bottom: 12px; color: #d6fc8a; font-size: 12px; }
+.interest-selected-summary > span { display: flex; align-items: center; gap: 6px; }
+.mobile-interest-picker .mobile-interest-grid button { min-width: 0; justify-content: flex-start; padding: 14px 12px; gap: 9px; background: linear-gradient(135deg, var(--ui-tint), #24222f); overflow-wrap: anywhere; }
+.mobile-interest-picker .mobile-interest-grid button[aria-pressed="true"] { background: linear-gradient(135deg, #8169ec50, #302940); border-color: #c6b4ff; color: #f5f0ff; box-shadow: inset 0 0 0 1px #c6b4ff35; }
+.interest-choice-dot { display: grid; place-items: center; flex-shrink: 0; width: 25px; height: 25px; border-radius: 8px; background: #ffffff0d; color: var(--ui-accent, #bda8ff); }
+.mobile-interest-grid button[aria-pressed="true"] .interest-choice-dot { background: #d6fc8a; color: #21231a; }
+.interest-picker-note { margin: 20px 0 0; }
+.journey-stage .mobile-flow-footer.interest-picker-footer { position: relative; flex-shrink: 0; margin: 0; padding: 14px clamp(14px, 4vw, 28px); display: flex; align-items: center; gap: 12px; background: #24212f; border-top: 1px solid #bda8ff26; box-shadow: 0 -8px 30px #08070c45; z-index: 2; }
+.interest-picker-footer > div { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.interest-picker-footer strong { font-size: 13px; }
+.interest-picker-footer small { font-size: 11px; color: #bcb6ce; line-height: 1.45; }
+.interest-picker-footer .mobile-primary-button { min-height: 48px; flex-shrink: 0; }
+
+/* Natural card height keeps the prompt and all controls reachable on short phones. */
+.mobile-daily-deck { min-height: 100%; padding-bottom: 16px; overflow-x: clip; }
+.daily-deck-header { display: flex; align-items: center; gap: 12px; padding: 16px; border-bottom: 1px solid #ffffff10; background: #17151f; }
+.daily-deck-header h1 { font-size: 21px; font-weight: 750; }
+.daily-deck-header p { font-size: 12px; color: #b6aec9; margin-top: 4px; }
+.daily-deck-header > div { min-width: 0; flex: 1; }
+.daily-deck-filters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 5px; background: #ffffff06; border: 1px solid #ffffff0c; border-radius: 16px; gap: 4px; margin: 16px; }
+.daily-deck-filters button { min-height: 48px; font-size: 12px; border-radius: 11px; display: flex; flex-direction: column; gap: 3px; align-items: center; justify-content: center; color: #b6aec9; }
+.daily-deck-filters button[aria-pressed="true"] { background: #8169ec30; color: #f3edff; box-shadow: inset 0 0 0 1px #bda8ff45; }
+.daily-deck-content { padding: 2px 18px 20px; max-width: 660px; margin: auto; width: 100%; box-sizing: border-box; }
+.daily-deck-stack { position: relative; margin-bottom: 30px; }
+.daily-deck-stack-layer { position: absolute; inset: 0; border-radius: 24px; transform-origin: bottom center; pointer-events: none; border: 1px solid #ffffff12; }
+.daily-deck-card { position: relative; border-radius: 24px; overflow: hidden; padding: clamp(16px, 4vw, 24px); display: flex; flex-direction: column; gap: 16px; touch-action: pan-y; box-shadow: 0 16px 35px #00000035; }
+.daily-deck-card-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: space-between; }
+.daily-deck-category { display: flex; align-items: center; gap: 7px; border: 1px solid #ffffff22; background: #ffffff09; border-radius: 30px; padding: 7px 12px; font-size: 12px; font-weight: 650; }
+.daily-deck-level { font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: #e4d7f4; border-radius: 8px; padding: 6px 9px; background: #ffffff0c; }
+.daily-deck-card-art { position: relative; display: grid; place-items: center; height: 85px; border-radius: 18px; border: 1px solid #ffffff15; overflow: hidden; }
+.daily-deck-card-art > span { font-size: 52px; position: relative; transform: rotate(-9deg); filter: drop-shadow(0 5px 12px #00000045); }
+.daily-deck-card-art::before { content: ''; position: absolute; height: 120px; width: 120px; border: 1px solid #ffffff25; border-radius: 50%; transform: translateX(75px); }
+.daily-deck-card-art::after { content: ''; position: absolute; width: 54px; height: 54px; border: 1px solid #ffffff20; border-radius: 12px; transform: translateX(-85px) rotate(28deg); }
+.daily-deck-prompt { font-size: clamp(18px, 4.4vw, 24px); line-height: 1.5; font-weight: 650; letter-spacing: -.02em; overflow-wrap: anywhere; margin: 0; }
+.daily-deck-drive { font-size: 12px; color: #d1c5de; }
+.daily-deck-bounty { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-size: 11px; color: #f8d592; background: #f59e0b0d; border: 1px solid #f59e0b25; border-radius: 10px; padding: 10px; }
+.daily-deck-bounty strong { margin-left: auto; }
+.daily-deck-card .mobile-primary-button { width: 100%; min-height: 48px; }
+.daily-deck-room-button { justify-content: center; min-height: 44px; width: 100%; font-size: 12px; color: #c6b4df; }
+.daily-deck-counter { text-align: center; color: #b8aec6; font-size: 12px; margin: 18px 0 4px; }
+.daily-deck-empty { padding: 45px 12px; text-align: center; display: grid; justify-items: center; gap: 16px; }
+.daily-deck-empty > span { font-size: 50px; }
+.daily-deck-empty p { font-size: 13px; color: #bcb6ce; line-height: 1.6; }
+.daily-deck-content .mobile-deck-actions { padding: 0; }
+.mobile-daily-deck .mobile-saved-prompts { max-height: none; overflow: visible; margin: 10px 18px; }
+.daily-saved-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.daily-saved-actions button { min-height: 44px; }
+.deck-conversation-list { display: grid; gap: 9px; margin-top: 18px; }
+.deck-conversation-list button { display: flex; align-items: center; width: 100%; gap: 12px; text-align: left; padding: 13px; border: 1px solid #ffffff18; border-radius: 14px; background: #ffffff05; }
+.deck-conversation-list button:first-child { border-color: #bda8ff50; background: #8169ec12; }
+.deck-conversation-avatar { font-size: 25px; flex-shrink: 0; }
+.deck-conversation-list button > span:nth-child(2) { display: grid; gap: 4px; min-width: 0; flex: 1; }
+.deck-conversation-list strong { font-size: 14px; }
+.deck-conversation-list small { font-size: 11px; color: #bcb6ce; line-height: 1.5; }
+.deck-picker-prompt { border-left: 2px solid #d6fc8a; padding-left: 12px; }
+.chat-deck-context { flex-shrink: 0; display: flex; gap: 8px; align-items: center; justify-content: space-between; padding: 8px 16px; background: #30263f; border-block: 1px solid #c6b4ff22; }
+.chat-deck-context > span { font-size: 11px; color: #e1d2fb; min-width: 0; }
+.chat-deck-context button { min-height: 44px; flex-shrink: 0; font-size: 12px; }
+.chat-deck-prompt { padding: 16px; border: 1px solid #bda8ff45; border-radius: 16px; background: linear-gradient(140deg, #8169ec30, #25212e); }
+.chat-deck-prompt strong { display: block; font-size: 12px; color: #d6fc8a; margin-bottom: 9px; }
+.chat-deck-prompt p { font-size: 14px; line-height: 1.6; color: #f2ebfc; margin: 0; }
+@media (max-width: 359px) { .interest-picker-footer small { font-size: 10px; } .interest-picker-footer .mobile-primary-button { padding-inline: 13px; font-size: 12px; } .mobile-interest-picker .mobile-interest-grid { grid-template-columns: minmax(0, 1fr); } .interest-picker-intro { padding-right: 66px; } .interest-category-art { width: 53px; height: 63px; } }
+@media (min-width: 640px) { .interest-picker-body { padding-top: 30px; } .mobile-interest-picker .mobile-interest-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

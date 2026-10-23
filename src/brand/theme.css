@@ -1,0 +1,5 @@
+:root{--roleplay-bg:#15141d;--roleplay-panel:#22212d;--roleplay-panel-raised:#2b2937;--roleplay-primary:#8169ec;--roleplay-purple:#8d79f5;--roleplay-lime:#d6fc8a;--roleplay-text:#f6f5fb;--roleplay-muted:#a6a4b8}
+.roleplay-brand{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;color:var(--roleplay-text);font-family:Arial,sans-serif;font-weight:900;letter-spacing:-.9px;font-size:25px;line-height:1}
+.roleplay-brand img{width:34px;height:34px;flex-shrink:0;display:block}
+.roleplay-wordmark>span{color:var(--roleplay-lime)}
+@media(max-width:600px){.roleplay-brand{font-size:20px}.roleplay-brand img{width:30px;height:30px}}

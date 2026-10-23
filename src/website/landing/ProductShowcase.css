@@ -1,0 +1,175 @@
+.rp-tool-grid { display: grid; gap: 18px; max-width: 1160px; margin-inline: auto; }
+.rp-tool-card {
+  --tool-accent: #dcc7ff;
+  min-width: 0;
+  border-radius: 26px;
+  position: relative;
+}
+.rp-tool-card > a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 350px;
+  border: 1px solid #ffffff15;
+  border-radius: inherit;
+  background: radial-gradient(ellipse at 70% 10%, #8f65cf40, transparent 62%), linear-gradient(135deg, #423268, #28213f);
+  color: #fbf8ff;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow: 0 14px 32px #06050d26;
+  transition: border-color .25s, box-shadow .25s;
+}
+.rp-tool-copy { order: 2; padding: 20px 24px 24px; position: relative; z-index: 1; }
+.rp-tool-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border: 1px solid #ffffff21;
+  border-radius: 9px;
+  background: #100e191a;
+  color: var(--tool-accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+.rp-tool-card .rp-tool-copy h3 {
+  font-size: clamp(25px, 2.2vw, 32px);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -.045em;
+  margin-bottom: 10px;
+}
+.rp-tool-card .rp-tool-copy p { color: #e8e1ef; font-size: 15px; line-height: 1.5; }
+.rp-tool-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  max-width: 100%;
+  min-height: 48px;
+  padding: 12px 19px;
+  border-radius: 999px;
+  background: #f1e9ff;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #362348;
+}
+.rp-tool-action > svg {
+  flex-shrink: 0;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+}
+.rp-tool-art {
+  order: 1;
+  display: grid;
+  place-items: center;
+  height: 205px;
+  position: relative;
+  min-width: 0;
+  margin: 10px 10px 0;
+  padding: 12px 20px 28px;
+}
+.rp-tool-halo {
+  position: absolute;
+  inset: 8% 12%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, color-mix(in srgb, var(--tool-accent) 20%, transparent), transparent 70%);
+  pointer-events: none;
+}
+.rp-tool-art > .rp-tool-graphic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-width: 300px;
+  overflow: visible;
+  transform: rotate(-4deg);
+  transition: transform .55s cubic-bezier(.25,.1,.25,1);
+}
+.rp-tool-note {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  max-width: calc(100% - 24px);
+  padding: 9px 12px;
+  border: 1px solid #ffffff1c;
+  border-radius: 12px;
+  background: #171425d9;
+  color: #ede6f7;
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: nowrap;
+  box-shadow: 0 6px 20px #0805121a;
+}
+.rp-tool-note > svg { flex-shrink: 0; }
+.rp-tool-category > svg, .rp-tool-note > svg { color: var(--tool-graphic-accent); }
+.rp-tool-material-pink { --tool-graphic-accent: #ffb9dc; }
+.rp-tool-material-cyan { --tool-graphic-accent: #a9f0ef; }
+.rp-tool-material-amber { --tool-graphic-accent: #ffe1a3; }
+.rp-tool-card-amber { --tool-accent: #ffe1a3; }
+.rp-tool-card-amber > a { background: radial-gradient(ellipse at 60% 10%, #b7752840, transparent 65%), linear-gradient(140deg, #4d3828, #292322); }
+.rp-tool-card-cyan { --tool-accent: #a9f0ef; }
+.rp-tool-card-cyan > a { background: radial-gradient(ellipse at 60% 10%, #21818c40, transparent 65%), linear-gradient(140deg, #21414a, #192b35); }
+.rp-tool-card-sage { --tool-accent: #d6fc8a; }
+.rp-tool-card-sage > a { background: radial-gradient(ellipse at 60% 10%, #77934c38, transparent 65%), linear-gradient(140deg, #30442d, #202c27); }
+.rp-tool-featured > a { background: radial-gradient(ellipse at 80% 40%, #b052ac38, transparent 58%), linear-gradient(125deg, #493677, #302548 65%, #442c4e); }
+.rp-tool-featured .rp-tool-art { height: 245px; padding-top: 16px; }
+.rp-tool-featured .rp-tool-art > .rp-tool-graphic { max-width: 385px; transform: rotate(-9deg); }
+.rp-tool-featured .rp-tool-copy h3 { font-size: clamp(34px, 4.1vw, 56px); }
+.rp-tool-featured .rp-tool-copy p { font-size: clamp(16px, 1.5vw, 20px); }
+.rp-tool-featured .rp-tool-action { margin-top: 22px; }
+.rp-tool-spark { position: absolute; color: #d6fc8a; }
+.rp-tool-spark-one { top: 18%; left: 10%; transform: rotate(-12deg); }
+.rp-tool-spark-two { right: 12%; bottom: 25%; color: #edd2ff; }
+.rp-tool-card > a:focus-visible { outline: 3px solid #d6fc8a; outline-offset: 5px; }
+@media (hover: hover) {
+  .rp-tool-card > a:hover { border-color: #d8c3ff55; box-shadow: 0 20px 40px #08061140; }
+  .rp-landing[data-animation=on] .rp-tool-card > a:hover .rp-tool-art > .rp-tool-graphic { transform: translateY(-7px) rotate(1deg) scale(1.025); }
+}
+@media (min-width: 640px) {
+  .rp-tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rp-tool-featured, .rp-tool-card-sage { grid-column: 1 / -1; }
+}
+@media (min-width: 768px) {
+  .rp-tool-featured > a { display: grid; grid-template-columns: .9fr 1.1fr; min-height: 315px; align-items: center; }
+  .rp-tool-featured .rp-tool-copy { order: 1; padding: 32px; }
+  .rp-tool-featured .rp-tool-art { order: 2; height: 275px; margin: 0 16px 0 0; padding-bottom: 38px; }
+  .rp-tool-featured .rp-tool-note { bottom: 18px; }
+  .rp-tool-card-sage > a { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; min-height: 300px; }
+  .rp-tool-card-sage .rp-tool-copy { order: 1; padding: 28px; }
+  .rp-tool-card-sage .rp-tool-art { order: 2; margin: 0 10px 0 0; height: 245px; }
+}
+@media (min-width: 1024px) {
+  .rp-tool-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .rp-tool-featured { grid-column: 1 / -1; }
+  .rp-tool-featured > a { min-height: 350px; }
+  .rp-tool-featured .rp-tool-copy { padding: 36px; }
+  .rp-tool-featured .rp-tool-art { height: 315px; }
+  .rp-tool-featured .rp-tool-art > .rp-tool-graphic { max-width: 450px; }
+  .rp-tool-card-sage { grid-column: auto; }
+  .rp-tool-card-sage > a { display: flex; min-height: 350px; }
+  .rp-tool-card-sage .rp-tool-copy { order: 2; padding: 20px 24px 24px; }
+  .rp-tool-card-sage .rp-tool-art { order: 1; margin: 10px 10px 0; height: 205px; }
+}
+@media (max-width: 379px) {
+  .rp-tool-card { border-radius: 22px; }
+  .rp-tool-copy { padding: 20px; }
+  .rp-tool-art { height: 190px; padding-inline: 16px; }
+  .rp-tool-note { font-size: 10px; padding-inline: 9px; }
+  .rp-tool-featured .rp-tool-art { height: 220px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rp-tool-card > a:hover .rp-tool-art > .rp-tool-graphic { transform: none !important; }
+}

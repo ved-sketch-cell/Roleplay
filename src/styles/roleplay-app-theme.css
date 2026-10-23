@@ -1,0 +1,32 @@
+html,body,#root{margin:0;min-height:100%;background:var(--roleplay-bg);color:var(--roleplay-text);font-family:Arial,sans-serif}
+:root{--background:#15141d;--foreground:#f6f5fb;--card:#22212d;--card-foreground:#f6f5fb;--popover:#22212d;--popover-foreground:#f6f5fb;--primary:#8169ec;--primary-foreground:#fff;--secondary:#2b2937;--secondary-foreground:#f6f5fb;--muted:#2b2937;--muted-foreground:#a6a4b8;--accent:#2b2937;--accent-foreground:#f6f5fb;--border:#ffffff18;--input:#ffffff18;--ring:#8d79f5}
+.attached-app-shell{height:100dvh;display:flex;flex-direction:column;background:var(--roleplay-bg)}
+.attached-app-viewport{flex:1;min-height:0;overflow:auto;position:relative;isolation:isolate;transform:translateZ(0)}
+.attached-app-viewport .bg-white{background-color:var(--roleplay-panel)}
+.attached-app-viewport :is(.bg-gray-50,.bg-gray-100,.bg-slate-50,.bg-slate-100){background-color:var(--roleplay-panel-raised)}
+.attached-app-viewport :is(.text-black,.text-gray-900,.text-gray-800,.text-slate-900,.text-slate-800){color:var(--roleplay-text)}
+.attached-app-viewport :is(.text-gray-700,.text-gray-600,.text-gray-500,.text-slate-700,.text-slate-600,.text-slate-500){color:var(--roleplay-muted)}
+.attached-app-viewport :is(.border-gray-100,.border-gray-200,.border-gray-300,.border-slate-200){border-color:#ffffff18}
+.attached-app-viewport :is(.bg-purple-600,.bg-indigo-600,.bg-violet-600){background-color:var(--roleplay-primary)}
+.attached-app-viewport :is(.text-purple-600,.text-indigo-600,.text-violet-600){color:var(--roleplay-purple)}
+.attached-app-viewport input,.attached-app-viewport textarea{color:var(--roleplay-text)}
+
+.embedded-feature-shell .h-screen{height:100dvh}.embedded-feature-shell .min-h-screen{min-height:100dvh}
+@media(min-width:850px){.embedded-feature-shell .attached-app-viewport>div{max-width:1100px;margin-left:auto;margin-right:auto}.embedded-feature-shell .max-w-md{max-width:900px}}
+:root{color-scheme:dark}
+.embedded-feature-shell .h-screen{height:100dvh}.embedded-feature-shell .min-h-screen{min-height:100dvh}
+.mascot-carousel{margin:16px 16px 20px}
+.mascot-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:22px}
+.mascot-track::-webkit-scrollbar{display:none}
+.mascot-slide{flex:0 0 100%;scroll-snap-align:start;display:flex;align-items:center;min-height:215px;padding:22px;gap:8px;border:1px solid #8d79f544;border-radius:22px;background:linear-gradient(130deg,#382c57,#22212d)!important}
+.mascot-slide:nth-child(2){background:linear-gradient(130deg,#254039,#22212d)!important}.mascot-slide:nth-child(3){background:linear-gradient(130deg,#243c52,#22212d)!important}
+.mascot-copy{flex:1;min-width:0}.mascot-tag{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:800;letter-spacing:.07em;color:#c1afff;margin:0 0 10px}.mascot-copy h2{font-size:25px;font-weight:800;line-height:1.2;color:var(--roleplay-text);letter-spacing:-.6px;margin:0}.mascot-body{font-size:14px;line-height:1.5;color:#c3bdce;margin:10px 0 14px}.mascot-action{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:10px;padding:11px 14px;background:var(--roleplay-primary);color:#fff;font-size:14px;font-weight:700;cursor:pointer}.mascot-action>svg{display:none}.mascot-art{width:125px;flex-shrink:0}.mascot-art svg{width:100%;height:auto}.mascot-controls{display:flex;justify-content:center;align-items:center;gap:18px;margin-top:10px}.mascot-controls>button{border:0;background:var(--roleplay-panel-raised);color:#c1afff;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;cursor:pointer}.mascot-controls>button:disabled{opacity:.35}.mascot-dots{display:flex;gap:5px}.mascot-dots button{border:0;padding:8px;width:22px;height:22px;background:transparent;position:relative;cursor:pointer}.mascot-dots button:after{content:'';position:absolute;inset:7px;border-radius:20px;background:#665a80}.mascot-dots button.is-active:after{background:#bda8ff}.attached-app-viewport button:focus-visible,.attached-app-viewport a:focus-visible{outline:3px solid var(--roleplay-lime);outline-offset:3px}
+@media(max-width:360px){.mascot-slide{padding:18px 14px}.mascot-art{width:90px}.mascot-copy h2{font-size:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.attached-app-viewport :is([class*="text-[7px]"],[class*="text-[8px]"],[class*="text-[9px]"],[class*="text-[10px]"],[class*="text-[11px]"]){font-size:12px;line-height:1.45}
+.attached-app-viewport .text-xs{font-size:14px}
+.attached-app-viewport>div{max-width:1100px;margin:0 auto}
+@media(min-width:1100px){.attached-app-viewport>div>div.fixed.bottom-0{max-width:1100px;left:50%;transform:translateX(-50%)}}
+.mascot-carousel{position:relative;z-index:10}
+.attached-app-viewport .h-screen{height:100%}.attached-app-viewport .min-h-screen{min-height:100%}
+.roleplay-bottom-nav{flex-shrink:0;gap:0}.roleplay-bottom-nav button{width:100%;padding-inline:0}.roleplay-bottom-nav span{font-size:12px!important;line-height:1.5;white-space:normal}.roleplay-bottom-nav .text-blue-500{color:var(--roleplay-purple)}.roleplay-bottom-nav .fill-blue-500{fill:var(--roleplay-purple)}

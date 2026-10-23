@@ -1,0 +1,193 @@
+/* A compact, labelled heat rail; explanation and controls appear on request. */
+.conversation-heat-rail,.heat-details-panel {
+  --heat-gradient: linear-gradient(0deg,#b6a2ff 0%,#89ded2 30%,#ffd383 55%,#ffad9d 80%,#ffad9d 100%);
+}
+.conversation-heat-rail {
+  padding: 18px 0;
+  pointer-events: none;
+  container-type: size;
+  container-name: heat-rail;
+}
+.conversation-heat-rail .heat-meter-button {
+  position: relative;
+  width: 44px;
+  height: 100%;
+  max-height: 320px;
+  min-height: 44px;
+  padding: 10px 3px;
+  border: 1px solid #b9a1ff1a;
+  border-radius: 18px;
+  background: #b9a1ff05;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  color: var(--heat-color);
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.conversation-heat-rail .heat-meter-button .heat-track {
+  display: block;
+  width: 12px;
+  height: auto;
+  flex: 1;
+  min-height: 20px;
+  border-radius: 999px;
+  border: 1px solid #c7b8eb22;
+  background: linear-gradient(0deg,#b6a2ff12,#89ded212 30%,#ffd38312 55%,#ffad9d12 100%),#282331;
+  box-shadow: inset 0 1px 5px #09061075,0 0 0 4px #ffffff02;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow .25s ease;
+}
+.conversation-heat-rail .heat-track::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  left: 2px;
+  top: 4px;
+  bottom: 4px;
+  background: #ffffff18;
+  border-radius: 999px;
+  pointer-events: none;
+}
+.conversation-heat-rail .heat-track-fill,.heat-reading-strip > span {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 999px;
+  background-image: var(--heat-gradient);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  overflow: hidden;
+  box-shadow: 0 0 14px #bca4ff26;
+  transition: height .5s cubic-bezier(.22,.61,.36,1);
+}
+.mobile-chat-view .conversation-heat-rail { width: 56px; padding: 16px 6px; }
+.mobile-chat-view .chat-message-scroll { margin-right: 56px; }
+.heat-meter-heading { display: flex; flex-direction: column; align-items: center; gap: 4px; flex-shrink: 0; }
+.heat-meter-heading > span { color: #b9adcd; font: 650 10px/1.4 var(--app-font,system-ui,sans-serif); text-transform: uppercase; letter-spacing: .09em; }
+.heat-meter-reading { display: flex; flex-direction: column; align-items: center; gap: 2px; flex-shrink: 0; }
+.heat-meter-reading > strong { color: #eee6fb; font: 650 15px/1.2 var(--app-font,system-ui,sans-serif); font-variant-numeric: tabular-nums; }
+.heat-meter-reading > small { color: var(--heat-color); font: 500 10px/1.4 var(--app-font,system-ui,sans-serif); }
+.heat-track-cap {
+  position: absolute;
+  height: 2px;
+  top: 0;
+  left: 2px;
+  right: 2px;
+  border-radius: 999px;
+  background: #ffffff9c;
+}
+.conversation-heat-rail .heat-meter-button:focus-visible { outline: 2px solid var(--heat-color); outline-offset: -3px; }
+.conversation-heat-rail .heat-meter-button:is(:hover,:focus-visible).is-updated .heat-track,
+.conversation-heat-rail .heat-meter-button.is-updated .heat-track { box-shadow: inset 0 1px 5px #09061045,0 0 0 4px #ffffff04,0 0 19px color-mix(in srgb,var(--heat-color) 24%,transparent); }
+.heat-meter-tooltip {
+  position: absolute;
+  right: calc(50% + 16px);
+  bottom: clamp(0px,var(--heat-level),calc(100% - 58px));
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 132px;
+  padding: 9px 11px;
+  border: 1px solid color-mix(in srgb,var(--heat-color) 30%,transparent);
+  border-radius: 12px;
+  color: #f5effe;
+  background: #292232fa;
+  box-shadow: 0 6px 20px #09061240;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(4px);
+  transition: opacity .18s ease,transform .18s ease,visibility .18s;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 5;
+}
+.heat-meter-tooltip > small { font: 500 10px/1.4 var(--app-font,system-ui,sans-serif); color: #bcb0cc; }
+.heat-meter-tooltip strong { display: flex; align-items: center; gap: 5px; font: 700 15px/1.4 var(--app-font,system-ui,sans-serif); }
+.heat-meter-tooltip strong > span { font-size: 10px; font-weight: 500; color: #d0c2dd; }
+.heat-meter-tooltip b { margin-left: 3px; border-radius: 5px; padding: 1px 4px; font-size: 10px; background: #89ded21a; color: #b3eddf; }
+.heat-meter-button[aria-expanded=false]:is(:hover,:focus-visible,.is-updated) .heat-meter-tooltip { opacity: 1; visibility: visible; transform: translateX(0); }
+.heat-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; border: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.snapshot-rail .conversation-heat-rail.is-compact { min-height: 120px; height: 250px; max-height: 65%; padding: 18px 0; }
+.snapshot-rail .conversation-heat-rail .heat-meter-button { max-height: 200px; }
+.snapshot-rail .heat-meter-tooltip { left: calc(50% + 16px); right: auto; transform: translateX(-4px); }
+
+/* A readable, dismissible sheet with a simple explanation before preview settings. */
+.conversation-dialog.heat-details-panel {
+  max-width: 440px;
+  padding: 20px;
+  background: #24202d;
+  border-color: #c7b3ed30;
+  border-radius: 25px;
+  font-family: var(--app-font,system-ui,sans-serif);
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.heat-panel-top { position: sticky; top: 0; display: flex; align-items: center; gap: 15px; justify-content: space-between; padding-bottom: 16px; background: #24202d; z-index: 1; }
+.heat-panel-top > div { min-width: 0; flex: 1; }
+.heat-panel-top .heat-panel-eyebrow { margin: 0 0 5px; color: #b9a3db; font-size: 9px; line-height: 1.6; font-weight: 650; letter-spacing: .09em; }
+.heat-details-panel .heat-panel-top h2 { font-size: 24px; line-height: 1.2; font-weight: 700; letter-spacing: -.65px; }
+.heat-panel-top > .mobile-icon-button { width: 44px; height: 44px; border: 1px solid #c7b3ed20; border-radius: 13px; background: #c7b3ed0a; color: #d9c8ef; }
+.heat-reading { display: flex; align-items: center; gap: 20px; padding: 19px 21px; border-radius: 20px; border: 1px solid color-mix(in srgb,var(--heat-color) 22%,transparent); background: radial-gradient(ellipse at 100% 0,color-mix(in srgb,var(--heat-color) 11%,transparent),transparent 90%),#1c1924; }
+.heat-reading > div:first-child { min-width: 0; flex: 1; }
+.heat-level-name { display: inline-block; color: var(--heat-color); font-size: 12px; line-height: 1.5; font-weight: 650; }
+.heat-details-panel .heat-reading-value { display: flex; align-items: baseline; gap: 6px; margin: 5px 0 4px; font-size: 45px; line-height: 1.1; font-weight: 650; letter-spacing: -1.8px; color: #f7f1ff; font-variant-numeric: tabular-nums; }
+.heat-reading-value > span { font-size: 15px; font-weight: 450; letter-spacing: -.2px; color: #b3a4c7; }
+.heat-details-panel .heat-reading-caption { font-size: 12px; line-height: 1.65; color: #c4b5d2; margin: 8px 0 0; }
+.heat-reading-strip { position: relative; width: 12px; height: 102px; flex-shrink: 0; border: 1px solid #d7c4f02b; border-radius: 999px; background: #ffffff09; overflow: hidden; }
+.conversation-dialog.heat-details-panel .heat-panel-description { font-size: 12px; line-height: 1.75; color: #bdb0cc; margin: 16px 1px 18px; }
+.heat-levels { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+.heat-level { display: flex; align-items: center; gap: 8px; min-width: 0; min-height: 60px; padding: 10px; border: 1px solid #ffffff0d; border-radius: 13px; background: #ffffff02; }
+.heat-level.is-current { border-color: color-mix(in srgb,var(--level-color) 42%,transparent); background: color-mix(in srgb,var(--level-color) 7%,transparent); }
+.heat-level-swatch { display: block; width: 4px; height: 27px; border-radius: 5px; background: var(--level-color); flex-shrink: 0; }
+.heat-level > span:nth-child(2) { flex: 1; min-width: 0; }
+.heat-level strong { display: block; font-size: 12px; line-height: 1.5; font-weight: 650; color: #e4d8ef; }
+.heat-level small { display: block; font-size: 10px; line-height: 1.5; color: #b0a0c0; }
+.heat-current-label { color: var(--level-color); font-size: 9px; line-height: 1.5; }
+.heat-how { margin-top: 22px; }
+.heat-details-panel .heat-how h3 { font-size: 14px; line-height: 1.5; font-weight: 650; margin: 0 0 10px; letter-spacing: -.1px; }
+.heat-how dl { display: grid; gap: 9px; margin: 0; }
+.heat-how dl > div { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+.heat-how dt { color: #bdb0cc; font-size: 12px; line-height: 1.6; }
+.heat-how dd { margin: 0; color: #dfc5a0; font-size: 12px; line-height: 1.6; font-weight: 650; font-variant-numeric: tabular-nums; }
+.heat-details-panel .heat-how > p { font-size: 11px; line-height: 1.7; color: #a99ab9; padding-top: 13px; margin: 14px 0 0; border-top: 1px solid #ffffff0b; }
+.heat-preview-toggle { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 46px; width: 100%; padding: 12px 0 2px; margin-top: 11px; border: 0; border-radius: 9px; background: transparent; text-align: left; color: #bcacd1; font-size: 11px; line-height: 1.6; }
+.heat-preview-toggle > span { color: #d4bff5; font-size: 11px; }
+.heat-preview-controls { margin-top: 8px; border: 1px solid #b9a1ff22; border-radius: 16px; background: #b9a1ff07; padding: 15px 13px; }
+.heat-preview-controls .heat-demo-control { font-size: 12px; margin: 0 0 12px; color: #d4c8df; }
+.heat-demo-control output { float: right; font-size: 12px; font-weight: 650; font-variant-numeric: tabular-nums; color: var(--heat-color); }
+.heat-preview-controls .heat-demo-control > input { min-height: 44px; accent-color: #c6acff; margin-top: 6px; }
+.heat-preview-controls .mobile-secondary-button { width: 100%; min-height: 44px; padding: 10px 12px; font-size: 12px !important; font-weight: 600; background: #b9a1ff0d; border-color: #b9a1ff25; color: #dccaf8; }
+@media (max-width: 359px) {
+  .conversation-dialog.heat-details-panel { padding: 17px 15px; border-radius: 22px; }
+  .heat-details-panel .heat-panel-top h2 { font-size: 22px; }
+  .heat-reading { padding: 17px; }
+  .heat-level { padding: 9px 7px; gap: 6px; }
+}
+@media (max-height: 560px) {
+  .conversation-heat-rail { padding-block: 10px; }
+  .conversation-heat-rail .heat-meter-button { max-height: 190px; }
+  .heat-reading-strip { height: 83px; }
+  .heat-details-panel .heat-reading-value { font-size: 38px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .conversation-heat-rail .heat-track-fill,.heat-reading-strip > span,.heat-meter-tooltip,.conversation-heat-rail .heat-track { transition: none; }
+}
+.mobile-reduced-motion :is(.heat-track-fill,.heat-reading-strip > span,.heat-meter-tooltip,.heat-track) { transition: none !important; }
+
+@media (min-width: 600px) {
+  .mobile-chat-view .chat-message-scroll { width: calc(100% - 56px); margin-inline: auto; transform: translateX(-28px); }
+}
+@container heat-rail (max-height: 160px) {
+  .conversation-heat-rail .heat-meter-button { gap: 6px; padding-block: 7px; }
+  .heat-meter-heading > span,.heat-meter-reading > small { display: none; }
+}
+@container heat-rail (max-height: 100px) {
+  .heat-meter-heading { display: none; }
+  .conversation-heat-rail .heat-meter-button { gap: 4px; padding-block: 5px; }
+}

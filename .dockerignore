@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.env
+.env.*
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/.venv
+*.zip
+
+backups/
+*backup-key*.txt
+*.dump.age

@@ -1,0 +1,38 @@
+{
+  "type": "function",
+  "name": "recommend_users",
+  "description": "Find consenting ROLEPLAY users with preferences similar to the authenticated caller. The server applies blocking, privacy and contact constraints. It never accepts a user ID from the model.",
+  "strict": true,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "limit": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 20
+      },
+      "min_score": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "interests": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "maxItems": 5
+      }
+    },
+    "required": [
+      "limit",
+      "min_score",
+      "interests"
+    ],
+    "additionalProperties": false
+  }
+}

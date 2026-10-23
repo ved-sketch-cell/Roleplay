@@ -1,0 +1,140 @@
+{
+  "generation_method": "built-in image_gen__imagegen",
+  "transparent_background": true,
+  "asset_count": 22,
+  "assets": [
+    {
+      "slug": "daily-deck",
+      "title": "Daily Deck",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a fan of exactly three iridescent purple playing cards, central card with one embossed four-point star. Color palette: purple, silver blue, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/daily-deck.webp"
+    },
+    {
+      "slug": "chat-games",
+      "title": "Chat Games",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a coral-pink joystick game controller with two tiny dice beside it. Color palette: pink, cyan, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/chat-games.webp"
+    },
+    {
+      "slug": "affinity",
+      "title": "Affinity",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: two interlocking translucent cyan puzzle pieces, warm light where they meet. Color palette: cyan, silver, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/affinity.webp"
+    },
+    {
+      "slug": "xp-economy",
+      "title": "XP Economy",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a small open treasure chest filled with glowing embossed gold coins. Color palette: gold, bronze, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/xp-economy.webp"
+    },
+    {
+      "slug": "shadow-simulator",
+      "title": "Shadow Simulator",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a theatrical half-mask facing its reflection in a tilted dark purple mirror. Color palette: purple, blue, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/shadow-simulator.webp"
+    },
+    {
+      "slug": "skill-tree-journal",
+      "title": "Skill Tree Journal",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: an open green journal with a tiny branching tree of translucent leaves growing from its pages. Color palette: lime, teal, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/skill-tree-journal.webp"
+    },
+    {
+      "slug": "scenario-spinner",
+      "title": "Scenario Spinner",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a freestanding gold-and-purple decision wheel with varied blank segments and an arrow pointer. Color palette: gold, purple, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/scenario-spinner.webp"
+    },
+    {
+      "slug": "vulnerability-staircase",
+      "title": "Vulnerability Staircase",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a curved staircase of pink translucent steps rising toward a small luminous heart. Color palette: pink, rose, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/vulnerability-staircase.webp"
+    },
+    {
+      "slug": "text-escape-room",
+      "title": "Text Escape Room",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a miniature cyan locked door standing ajar with a floating antique key, inviting light from inside. Color palette: cyan, silver blue, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/text-escape-room.webp"
+    },
+    {
+      "slug": "blind-empathy-swap",
+      "title": "Blind Empathy Swap",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: two softly sculpted hands exchanging contrasting translucent speech bubbles. Color palette: coral, blue, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/blind-empathy-swap.webp"
+    },
+    {
+      "slug": "mentorship-gauntlet",
+      "title": "Mentorship Gauntlet",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: an upright blue training gauntlet holding a small glowing golden baton. Color palette: blue, gold, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/mentorship-gauntlet.webp"
+    },
+    {
+      "slug": "crucible-debates",
+      "title": "Crucible Debates",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: bronze balance scales with contrasting two speech bubbles on the pans. Color palette: amber, blue, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/crucible-debates.webp"
+    },
+    {
+      "slug": "lore-bounties",
+      "title": "Lore Bounties",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a rolled green-edged parchment scroll with a quill and a green wax seal. Color palette: lime, gold, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/lore-bounties.webp"
+    },
+    {
+      "slug": "pace-maker",
+      "title": "Pace Maker",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a refined cyan hourglass with flowing luminous grains, serene glass reflections. Color palette: cyan, blue, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/pace-maker.webp"
+    },
+    {
+      "slug": "sanctuary",
+      "title": "Sanctuary",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a miniature rose stone arched alcove with a cushioned seat and gentle interior light. Color palette: pink, lavender, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/sanctuary.webp"
+    },
+    {
+      "slug": "lantern-garden",
+      "title": "Lantern Garden",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: two warm gold lanterns hanging at different heights from a small leafy curved branch. Color palette: amber, green, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/lantern-garden.webp"
+    },
+    {
+      "slug": "reframing-loom",
+      "title": "Reframing Loom",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a purple frame loom with interwoven cyan and lavender ribbons, visibly woven. Color palette: purple, cyan, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/reframing-loom.webp"
+    },
+    {
+      "slug": "pulse-sync",
+      "title": "Pulse Sync",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: two coral tuning forks vibrating with thin interlaced luminous wave trails. Color palette: coral, silver, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/pulse-sync.webp"
+    },
+    {
+      "slug": "kintsugi-canvas",
+      "title": "Kintsugi Canvas",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a tilted dark ceramic art panel with beautiful gold repair seams and a paintbrush resting alongside it. Color palette: gold, indigo, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/kintsugi-canvas.webp"
+    },
+    {
+      "slug": "boundary-sentinels",
+      "title": "Boundary Sentinels",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a compact green fortress gate protected by two distinct shield sentinels. Color palette: lime, dark silver, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/boundary-sentinels.webp"
+    },
+    {
+      "slug": "ebb-and-flow",
+      "title": "Ebb & Flow",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a sculptural rolling ocean wave curling over a calm blue water surface. Color palette: blue, aqua, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/ebb-and-flow.webp"
+    },
+    {
+      "slug": "fractured-root",
+      "title": "Fractured Root",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent premium 3D feature-card artwork for the ROLEPLAY dark mobile app. Subject: a small bonsai with visible twisting roots embracing a cracked dark pot, green glow in the root tips. Color palette: lime, charcoal, saturated accent colors. Style and materials: highly polished sculptural 3D product illustration, premium shaded gradients, beautiful glass, metal and ceramic as appropriate to the subject, high contrast dark shaded forms, refined material details. Lighting: soft dramatic blue and gold rim light, restrained glow, studio-grade reflections. Composition: square canvas, centered complete silhouette, three-quarter view where appropriate, single cohesive object group occupying about 75 percent of canvas with generous clear margins. Genuine transparent background with alpha, no floor, no environment, no background panel. No text, no labels, no logos, no UI, no watermark, no icon overlay. Preserve the specified distinct subject exactly; make the object forms readable at small card size.",
+      "path": "public/cards/fractured-root.webp"
+    }
+  ],
+  "asset_format": "512×512 transparent WebP, quality 88"
+}
